@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lab="en">
+<head>
+    <meta chatset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Javascript Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Hardest Math Quiz</h1>
+        <div id="authentication">
+            <h2>Start Quiz</h2>
+            <input type="text" id="username" placeholder="Input Username">
+            <button id="start-quiz-btn">Start Quiz</button> 
+        </div>
+
+        <div id="quiz-section" style="display: none;">
+            <div id="progress-bar"></div>
+            <div id="question-container"></div>
+            <form id="quiz-form">
+                <input type="text" id="answer" placeholder="Your answer">
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+            <p id="feedback"></p>
+        </div>
+
+        <div id="score-section" style="display: none;">
+            <h2>Quiz Complete</h2>
+            <p id="final-score"></p>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
